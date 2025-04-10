@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RecipeNest</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="heading">RecipeNest</div>
+        <div class="nav">
+            <nav <style ="color:#598392" ></style>
+                <span><a href="index.html">Home</a></span>
+                <span><a href="recipe.html">Recipe</a></span>
+                <span><a href="#why-choose-us-section">Why choose us</a></span>
+                <span><a href="#contact">Contact us</a></span>
+                
+            </nav>
+        </div>
+
+    </header>
+    <div class="section">
+            <div class="title"> 
+                <h>HELLO!</h>
+                <p>Welocome to the Recipe World.</p>
+            
+            </div>
+</div>   
+        <section id="why-choose-us-section" class="why-choose-us-section">
+        <div>
+            <h class="why-choose-us-heading">Why Choose Us? 🍽️ </h>
+            <div class="why-choose-us-body">
+
+                
+
+                <p class="recipe-card"><img src="./handpickedrecip.jpg" height="80px" width="100px">  <strong>Handpicked Recipes:</strong> Only the best and most-loved recipes, curated for every craving.</p>
+                
+                <p class="recipe-card"><img src="./userfrndlyimg.jpg" height="80px" width="100px"><strong>User-Friendly Design:</strong> Easy to browse, search, and find your next favorite dish in seconds.</p>
+                
+                <p class="recipe-card"><img src="./handpickedimg.jpg" height="80px" width="100px"><strong>Wide Variety:</strong>  From street food to desserts, mocktails to biryanis – all in one place!</p>
+                
+                <p class="recipe-card"><img src="./updateimg.jpg" height="80px" width="100px"><strong>Regular Updates:</strong> Fresh content and new recipes added often to keep your kitchen inspired.</p>
+                
+                <p class="recipe-card"><img src="./cookingrec.jpg" height="80px" width="100px"><strong>No Clutter, Just Recipes:</strong>  Clean layout focused on what matters most — great food!</p>
+                
+                </div>
+            </section>
+
+        </div>
+        <section class="contact-sec" id="contact" style="background-image:linear-gradient(to right,#f2f1ed, #c0d6df) ;">
+            <div class="container pt-5 pb-5">
+                <h1 style="font-size: 30px; font-family: Times New Roman; padding-top: 20px;padding-bottom: 20px;">Contact Me</h1>
+                <div class="row justify-content-center">
+                    <div class="col-md-6">
+                        <form id="contactForm" action="https://formspree.io/f/your-formspree-id" method="POST">
+                            <div class="form-group">
+                                <label for="name">Name:</label>
+                                <input type="text" class="form-control" id="name" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email:</label>
+                                <input type="email" class="form-control" id="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Message:</label>
+                                <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
+                            </div>
+                            <div id="formMessage" style="text-align: center; margin: 10px 0; color: red;"></div>
+                            <div class="text-center">
+                                <button type="submit" class="btn btn-primary" style="background-color: #9ac9ad; border: none;">Send Message</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <h3 style="font-family: cursive; font-size: 30px; padding-top: 20px;">Thank you for visiting..</h3>
+        </section>
+        <script>
+            document.getElementById('contactForm').addEventListener('submit', function(e) {
+                e.preventDefault();
+                
+                const name = document.getElementById('name').value;
+                const email = document.getElementById('email').value;
+                const message = document.getElementById('message').value;
+                const formMessage = document.getElementById('formMessage');
+
+                // Basic validation
+                if (!name || !email || !message) {
+                    formMessage.textContent = 'Please fill in all fields';
+                    formMessage.style.color = 'red';
+                    return;
+                }
+
+                // Email validation
+                if (!/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email)) {
+                    formMessage.textContent = 'Please enter a valid email address';
+                    formMessage.style.color = 'red';
+                    return;
+                }
+
+                // Simulate form submission
+                formMessage.textContent = 'Message received!';
+                formMessage.style.color = 'green';
+                
+                // Reset form
+                this.reset();
+                
+                // Clear message after 1 minute
+                setTimeout(() => {
+                    formMessage.textContent = '';
+                }, 60000);
+            });
+        </script>
+        <footer style="font-family: cursive; font-size: 15px;">Made with ♥️ by Ramya..</footer>
+        
+
+</body>
+</html>

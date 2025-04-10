@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Sharing</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        
+        <a href="index.html"><img class="arrow-img" src="https://www.clipartbest.com/cliparts/9Tz/LEn/9TzLEn78c.png"></a>
+        <h1 style="padding-top: 10px;">Recipe Sharing</h1>
+        <input type="text" id="searchBar" placeholder="Search for recipes...">
+    </header>
+
+    <section class="recipe-container" id="recipeContainer">
+        <!-- Recipe Cards (Generated in JS or Static) -->
+    <div>
+        <h1 class="haveasipheading">Starters - Take a Bite, Ignite Your Appetite!🍗</h1>
+
+        <div><h class="subheading"> Veg Starters</h>
+            <div class="mocktail-section">
+                <div class="recipe-card" data-name="Baby Corn 65" data-ingredients="baby corn, cornflour, rice flour, curd, red chili powder, garlic, curry leaves">
+                    <h2>Baby Corn 65</h2>
+                    <img class="item-img" src="https://i.ytimg.com/vi/LFytB5OXi_c/maxresdefault.jpg" >
+                    <p><strong>Ingredients:</strong> Baby Corn, Cornflour, Rice Flour, Curd, Red Chili Powder, Garlic, Curry Leaves</p>
+                    <p><strong>Process:</strong> Parboil baby corn, marinate with curd and spices, coat with cornflour and rice flour, deep fry until crispy, toss with fried curry leaves and garlic, serve hot.</p>
+                </div>
+                
+                <div class="recipe-card" data-name="Paneer Tikka" data-ingredients="paneer, yogurt, spices, capsicum, onion, skewers">
+                    <h2>Paneer Tikka</h2>
+                    <img class="item-img" src="https://www.indianveggiedelight.com/wp-content/uploads/2021/08/air-fryer-paneer-tikka-featured.jpg">
+                    <p><strong>Ingredients:</strong> Paneer, Yogurt, Spices, Capsicum, Onion, Skewers</p>
+                    <p><strong>Process:</strong> Marinate paneer cubes with yogurt and spices, thread onto skewers with capsicum and onion, grill or bake until golden, and serve with mint chutney.</p>
+                </div>
+                
+                <div class="recipe-card" data-name="Paneer 65" data-ingredients="paneer, cornflour, curd, red chili powder, garlic, curry leaves">
+                    <h2>Paneer 65</h2>
+                    <img class="item-img" src="https://images.boldsky.com/kn/img/2024/05/paneer-65-recipe-in-kannada-1716022983.jpg">
+                    <p><strong>Ingredients:</strong> Paneer, Cornflour, Curd, Red Chili Powder, Garlic, Curry Leaves</p>
+                    <p><strong>Process:</strong> Marinate paneer with spices and curd, coat with cornflour, deep fry until golden, toss with curry leaves and garlic, serve hot.</p>
+                </div>              
+                
+                <div class="recipe-card" data-name="Stuffed Mushrooms" data-ingredients="mushrooms, cheese, garlic, herbs, breadcrumbs">
+                    <h2>Stuffed Mushrooms</h2>
+                    <img class="item-img" src="https://letthebakingbegin.com/wp-content/uploads/2018/04/Stuffed-Mushrooms.jpg">
+                    <p><strong>Ingredients:</strong> Mushrooms, Cheese, Garlic, Herbs, Breadcrumbs</p>
+                    <p><strong>Process:</strong> Remove mushroom stems, mix cheese, garlic, and herbs for stuffing, fill mushrooms, top with breadcrumbs, bake until golden, and serve hot.</p>
+                </div>
+                
+                <div class="recipe-card" data-name="Pav Bhaji" data-ingredients="pav buns, potatoes, tomatoes, onions, peas, capsicum, butter, pav bhaji masala">
+                    <h2>Pav Bhaji</h2>
+                    <img class="item-img" src="https://ministryofcurry.com/wp-content/uploads/2020/01/pav-bhaji-2-2-850x1275.jpg">
+                    <p><strong>Ingredients:</strong> Pav Buns, Potatoes, Tomatoes, Onions, Peas, Capsicum, Butter, Pav Bhaji Masala</p>
+                    <p><strong>Process:</strong> Boil and mash vegetables. Sauté onions, tomatoes, and capsicum in butter. Add mashed vegetables and pav bhaji masala, cook until well blended. Toast pav buns with butter and serve hot with bhaji, onion, and lemon.</p>
+                </div>
+
+                <div class="recipe-card" data-name="Mirchi Bajji" data-ingredients="green chilies, besan (gram flour), rice flour, carom seeds, salt, oil">
+                    <h2>Mirchi Bajji</h2>
+                    <img class="item-img" src="https://www.cookclickndevour.com/wp-content/uploads/2017/11/cut-mirchi-bajji-recipe-a.jpg" >
+                    <p><strong>Ingredients:</strong> Green Chilies, Besan (Gram Flour), Rice Flour, Carom Seeds, Salt, Oil</p>
+                    <p><strong>Process:</strong> Slit green chilies and deseed if needed. Prepare batter using besan, rice flour, spices. Dip chilies in batter and deep fry until golden. Optionally, cut and refry for "cut mirchi" style. Serve hot with chutney.</p>
+                </div>
+
+                <div class="recipe-card" data-name="Pani Puri" data-ingredients="puri, boiled potatoes, chickpeas, tamarind chutney, mint water, spices">
+                    <h2>Pani Puri</h2>                   
+                    <img class="item-img" src="https://www.archanaskitchen.com/images/archanaskitchen/1-Author/sneha-archanaskitchen.com/Sweet__Spicy_Pineapple_Pani_Puri_Recipe_.jpg">                  
+                    <p><strong>Ingredients:</strong> Puri, Boiled Potatoes, Chickpeas, Tamarind Chutney, Mint Water, Spices</p>
+                    <p><strong>Process:</strong> Fill puris with mashed potatoes and chickpeas, add tamarind chutney, pour chilled mint water, and serve immediately for a burst of flavors.</p>
+                </div>               
+
+                <div><h class="subheading"> Non-Veg Starters</h>
+                    <div class="mocktail-section">
+                        <div class="recipe-card" data-name="Chicken Tikka" data-ingredients="chicken, yogurt, spices, lemon, skewers">
+                            <h2>Chicken Tikka</h2>
+                            <img class="item-img" src="https://www.flavorquotient.com/wp-content/uploads/2020/04/Chicken-Tikka-FQ-4-1-of-1.jpg">
+                            <p><strong>Ingredients:</strong> Chicken, Yogurt, Spices, Lemon, Skewers</p>
+                            <p><strong>Process:</strong> Marinate chicken with yogurt, spices, and lemon juice, thread onto skewers, grill or bake until charred, and serve with mint chutney.</p>
+                        </div>
+                        
+                        <div class="recipe-card" data-name="Prawn Tempura" data-ingredients="prawns, tempura batter, salt, pepper, oil">
+                            <h2>Prawn Tempura</h2>
+                            <img class="item-img" src="https://www.munchkintime.com/wp-content/uploads/2021/03/Munchkin-Time-Shrimp-Tempura-Sushi-Recipe-22.jpg">
+                            <p><strong>Ingredients:</strong> Prawns, Tempura Batter, Salt, Pepper, Oil</p>
+                            <p><strong>Process:</strong> Dip prawns in tempura batter, deep fry until crispy, drain excess oil, and serve hot with a dipping sauce.</p>
+                        </div>
+                        
+                        <div class="recipe-card" data-name="Spicy Chicken Wings" data-ingredients="chicken wings, hot sauce, butter, garlic, pepper">
+                            <h2>Spicy Chicken Wings</h2>
+                            <img class="item-img" src="https://www.eatloveeats.com/wp-content/uploads/2021/11/Sticky-Spicy-Baked-Chicken-Wings-Featured-Image.jpg">
+                            <p><strong>Ingredients:</strong> Chicken Wings, Hot Sauce, Butter, Garlic, Pepper</p>
+                            <p><strong>Process:</strong> Marinate chicken wings with spices, bake or fry until crispy, toss in hot sauce and butter mix, and serve hot.</p>
+                        </div>
+                        
+                        <div class="recipe-card" data-name="Mutton Seekh Kebab" data-ingredients="minced mutton, spices, garlic, ginger, skewers">
+                            <h2>Mutton Seekh Kebab</h2>
+                            <img class="item-img" src="https://www.licious.in/blog/wp-content/uploads/2020/12/Mutton-Seekh-Kebab.jpg">
+                            <p><strong>Ingredients:</strong> Minced Mutton, Spices, Garlic, Ginger, Skewers</p>
+                            <p><strong>Process:</strong> Mix minced mutton with spices, garlic, and ginger, shape onto skewers, grill until cooked, and serve with onion rings and lemon wedges.</p>
+                        </div>
+                        
+                        <div class="recipe-card" data-name="Fish Fingers" data-ingredients="fish fillets, breadcrumbs, egg, flour, spices">
+                            <h2>Fish Fingers</h2>
+                            <img class="item-img" src="https://www.recipetineats.com/tachyon/2020/01/Fish-Fingers_8.jpg">
+                            <p><strong>Ingredients:</strong> Fish Fillets, Breadcrumbs, Egg, Flour, Spices</p>
+                            <p><strong>Process:</strong> Coat fish fillets with flour, dip in beaten egg, coat with breadcrumbs, deep fry until golden brown, and serve with tartar sauce.</p>
+                        </div>
+
+                        <div class="recipe-card" data-name="Tandoori Chicken" data-ingredients="chicken, curd, red chili powder, turmeric, garam masala, ginger garlic paste, lemon juice, oil">
+                            <h2>Tandoori Chicken</h2>
+                            <img class="item-img" src="https://www.licious.in/blog/wp-content/uploads/2020/12/Tandoori-Chicken.jpg">
+                            <p><strong>Ingredients:</strong> Chicken, Curd, Red Chili Powder, Turmeric, Garam Masala, Ginger Garlic Paste, Lemon Juice, Oil</p>
+                            <p><strong>Process:</strong> Marinate chicken with curd, spices, ginger garlic paste, and lemon juice. Let it rest for a few hours. Grill or bake until charred and fully cooked. Brush with oil and serve hot with onion rings and lemon wedges.</p>
+                        </div>
+                        
+                        <div class="recipe-card" data-name="Chicken Malai Tikka" data-ingredients="boneless chicken, cream, curd, ginger garlic paste, green chili paste, cheese, cardamom powder, salt">
+                            <h2>Chicken Malai Tikka</h2>
+                            <img class="item-img" src="https://veenaazmanov.com/wp-content/uploads/2018/06/Chicken-Malai-Tikka-Murg-Malai-Kebabs8.jpg">
+                            <p><strong>Ingredients:</strong> Boneless Chicken, Fresh Cream, Curd, Ginger Garlic Paste, Green Chili Paste, Grated Cheese, Cardamom Powder, Salt</p>
+                            <p><strong>Process:</strong> Marinate chicken in a creamy mixture of curd, cream, cheese, and spices. Let it rest for a few hours. Skewer and grill until tender and slightly charred. Serve hot with mint chutney.</p>
+                        </div>
+                        
+                        <div class="recipe-card" data-name="Chicken Lollipop" data-ingredients="chicken wings, ginger garlic paste, red chili sauce, soy sauce, cornflour, all-purpose flour, salt">
+                            <h2>Chicken Lollipop</h2>
+                            <img class="item-img" src="https://littlechef.co.in/wp-content/uploads/2023/01/CHICKEN-LOLLYPOP-2-1024x720.jpg">
+                            <p><strong>Ingredients:</strong> Chicken Wings (Lollipop Cut), Ginger Garlic Paste, Red Chili Sauce, Soy Sauce, Cornflour, All-purpose Flour, Salt</p>
+                            <p><strong>Process:</strong> Marinate chicken wings with sauces and spices, coat in a flour mixture, and deep fry until crispy. Serve hot with spicy sauce or schezwan dip.</p>
+                        </div>
+                        
+                        <div class="recipe-card" data-name="Prawns 65" data-ingredients="prawns, cornflour, rice flour, curd, red chili powder, garlic, curry leaves">
+                            <h2>Prawns 65</h2>
+                            <img class="item-img" src="https://thespiceadventuress.com/wp-content/uploads/2023/03/kaju-jhinga-square-1024x1024.jpg">
+                            <p><strong>Ingredients:</strong> Prawns, Cornflour, Rice Flour, Curd, Red Chili Powder, Garlic, Curry Leaves</p>
+                            <p><strong>Process:</strong> Marinate prawns with curd and spices, coat with cornflour and rice flour, deep fry until crispy. Toss with fried garlic and curry leaves. Serve hot.</p>
+                        </div>
+                        
+                        <div class="recipe-card" data-name="Tandoori Fish" data-ingredients="fish fillets, curd, red chili powder, turmeric, garam masala, lemon juice, ginger garlic paste, oil">
+                            <h2>Tandoori Fish</h2>
+                            <img class="item-img" src="https://www.flavorquotient.com/wp-content/uploads/2021/07/Grilled-Pomfret-FQ-1-1-of-1.jpg">
+                            <p><strong>Ingredients:</strong> Fish Fillets, Curd, Red Chili Powder, Turmeric, Garam Masala, Lemon Juice, Ginger Garlic Paste, Oil</p>
+                            <p><strong>Process:</strong> Marinate fish with curd, spices, and lemon juice. Rest for at least 1 hour. Grill or bake until nicely charred and cooked through. Brush with oil and serve hot with chutney and lemon.</p>
+                        </div>                      
+                
+    </div>
+    <div>
+        <h1 class="haveasipheading">Biryani - Layered with Love, Packed with Aroma!🌿🍽️🍤</h1>
+        <div><h class="subheading"> Veg Biryanis</h>
+            <div class="mocktail-section">
+                <div class="recipe-card" data-name="Vegetable Biryani" data-ingredients="basmati rice, mixed vegetables, curd, mint, green chilies, garam masala">
+                    <h2>Vegetable Biryani (South Indian Style)</h2>
+                    <img class="item-img" src="https://www.parentmap.com/images/article/7146/biryani.jpg">
+                    <p><strong>Ingredients:</strong> Basmati Rice, Mixed Vegetables, Curd, Mint, Green Chilies, Garam Masala</p>
+                    <p><strong>Process:</strong> Sauté vegetables with spices and curd. Layer with half-cooked rice, dum cook until aromatic. Garnish with mint and fried onions.</p>
+                </div>
+                
+                <div class="recipe-card" data-name="Mushroom Biryani" data-ingredients="mushrooms, basmati rice, onions, green chilies, biryani masala, mint">
+                    <h2>Mushroom Biryani</h2>
+                    <img class="item-img" src="https://www.kalnirnay.com/wp-content/uploads/2017/03/Chettinad-Biryani.jpg">
+                    <p><strong>Ingredients:</strong> Mushrooms, Basmati Rice, Onions, Green Chilies, Biryani Masala, Mint</p>
+                    <p><strong>Process:</strong> Cook mushrooms with onions and spices. Layer with rice and steam until flavors infuse. Serve hot with raita.</p>
+                </div>
+                
+                <div class="recipe-card" data-name="Paneer Biryani" data-ingredients="paneer, basmati rice, curd, spices, saffron, mint">
+                    <h2>Paneer Biryani</h2>
+                    <img class="item-img" src="https://simpleindianmeals.com/wp-content/uploads/2023/02/Instant-Pot-Paneer-Biryani-Recipe.jpg">
+                    <p><strong>Ingredients:</strong> Paneer Cubes, Basmati Rice, Curd, Whole Spices, Saffron, Mint</p>
+                    <p><strong>Process:</strong> Marinate paneer in spiced curd, cook gently, then layer with rice and saffron. Dum cook and serve with salad.</p>
+                </div>
+                
+                <div class="recipe-card" data-name="Brinjal Biryani" data-ingredients="brinjal, seeraga samba rice, tamarind, red chili powder, mustard, curry leaves">
+                    <h2>Brinjal (Kathirikai) Biryani</h2>
+                    <img class="item-img" src="https://ayurvedam365.com/wp-content/uploads/2023/04/brinjal-biryani.jpg">
+                    <p><strong>Ingredients:</strong> Brinjal, Seeraga Samba Rice, Tamarind, Red Chili Powder, Mustard Seeds, Curry Leaves</p>
+                    <p><strong>Process:</strong> Cook brinjal in a spicy tamarind masala, add rice, and simmer until flavors combine. Perfect with raita or chips.</p>
+                </div>
+                
+                <div class="recipe-card" data-name="Raw Jackfruit Biryani" data-ingredients="raw jackfruit, rice, curd, ginger garlic paste, whole spices, mint">
+                    <h2>Raw Jackfruit (Kathal) Biryani</h2>
+                    <img class="item-img" src="https://vismaifood.com/storage/app/uploads/public/2fa/52b/c3b/thumb__700_0_0_0_auto.jpg">
+                    <p><strong>Ingredients:</strong> Raw Jackfruit, Basmati Rice, Curd, Ginger Garlic Paste, Whole Spices, Mint</p>
+                    <p><strong>Process:</strong> Boil jackfruit, marinate in curd masala, then layer with rice. Dum cook for a meaty veg delight.</p>
+                </div>
+                
+                <div class="recipe-card" data-name="Cauliflower Biryani" data-ingredients="cauliflower, rice, curd, green chilies, spices, curry leaves">
+                    <h2>Cauliflower (Gobi) Biryani</h2>
+                    <img class="item-img" src="https://img.hellofresh.com/q_40,w_3840,f_auto,c_limit,fl_lossy/hellofresh_s3/image/roast-cauliflower-biryani-4783a099.jpg">
+                    <p><strong>Ingredients:</strong> Cauliflower Florets, Basmati Rice, Curd, Green Chilies, Spices, Curry Leaves</p>
+                    <p><strong>Process:</strong> Blanch and fry cauliflower, cook with masala and rice, layer and steam until fluffy. Serve hot with curd.</p>
+                </div>
+                
+                <div class="recipe-card" data-name="Tomato Biryani" data-ingredients="tomatoes, basmati rice, mustard seeds, green chilies, garlic, curry leaves">
+                    <h2>Tomato Biryani</h2>
+                    <img class="item-img" src="https://gingerskillet.com/wp-content/uploads/2021/02/TOMATOBIRYANI-8-683x1024.jpg">
+                    <p><strong>Ingredients:</strong> Ripe Tomatoes, Basmati Rice, Mustard Seeds, Green Chilies, Garlic, Curry Leaves</p>
+                    <p><strong>Process:</strong> Cook tomatoes with mustard and curry leaves until pulpy. Add rice and water, pressure cook for a tangy biryani experience.</p>
+                </div>
+                </div>
+                </div>
+                <div><h class="subheading">Non - Veg Biryanis</h>
+                    <div class="mocktail-section">
+
+                        <div class="recipe-card" data-name="Fish Biryani" data-ingredients="fish fillets, basmati rice, coconut milk, curry leaves, green chilies, spices">
+                            <h2>Fish Biryani (Mangalorean/Kerala Style)</h2>
+                            <img class="item-img" src="https://i.pinimg.com/originals/6c/5e/af/6c5eafa80bc23e834fffae0e1eede6ad.jpg">
+                            <p><strong>Ingredients:</strong> Fish Fillets, Basmati Rice, Coconut Milk, Curry Leaves, Green Chilies, Spices</p>
+                            <p><strong>Process:</strong> Fry fish lightly. Cook rice with coconut milk and spices. Layer with fish pieces and gently steam. Serve with lemon and raita.</p>
+                        </div>
+
+                        <div class="recipe-card" data-name="Nalli Gosh Biryani" data-ingredients="nalli mutton (mutton shank), basmati rice, curd, fried onions, saffron, spices">
+                            <h2>Nalli Gosh Biryani</h2>
+                            <img class="item-img" src="https://asianchefrecipes.com/wp-content/uploads/2024/05/Untitled-design-11-4.webp">
+                            <p><strong>Ingredients:</strong> Nalli Mutton (Mutton Shank), Basmati Rice, Curd, Fried Onions, Saffron, Whole Spices</p>
+                            <p><strong>Process:</strong> Marinate mutton shanks with curd and spices overnight. Slow-cook the meat until tender. Layer with basmati rice, saffron, and fried onions. Dum cook for rich, aromatic flavor. Serve with raita or salan.</p>
+                        </div>
+                        
+                        <div class="recipe-card" data-name="Chicken Fry Piece Biryani" data-ingredients="fried chicken pieces, rice, curd, onions, garam masala, mint">
+                            <h2>Chicken Fry Piece Biryani</h2>
+                            <img class="item-img" src="https://ruralkingz.com/wp-content/uploads/2020/08/fried.jpg">
+                            <p><strong>Ingredients:</strong> Fried Chicken Pieces, Basmati Rice, Curd, Onions, Garam Masala, Mint</p>
+                            <p><strong>Process:</strong> Marinate and fry chicken. Layer with rice and spiced gravy. Steam to combine flavors. Enjoy with boiled egg and onion salad.</p>
+                        </div>
+
+                        <div class="recipe-card" data-name="Tandoori Chicken Biryani" data-ingredients="tandoori chicken, basmati rice, curd, fried onions, mint, saffron, spices">
+                            <h2>Tandoori Chicken Biryani</h2>
+                            <img class="item-img" src="https://satyamskitchen.com/wp-content/uploads/2021/01/Tandoori_Chicken_Biriyani_-_Raw_1_30-e1612009020739.jpg">
+                            <p><strong>Ingredients:</strong> Tandoori Chicken, Basmati Rice, Curd, Fried Onions, Mint, Saffron, Whole Spices</p>
+                            <p><strong>Process:</strong> Marinate chicken with tandoori spices and grill until smoky. Cook basmati rice with whole spices. Layer rice with grilled chicken, fried onions, saffron, and mint. Dum cook for a smoky and spicy biryani experience.</p>
+                        </div>
+                        
+                        
+                        <div class="recipe-card" data-name="Chicken Lollipop Biryani" data-ingredients="chicken lollipop, basmati rice, curd, green chilies, spices, mint">
+                            <h2>Chicken Lollipop Biryani</h2>
+                            <img class="item-img" src="https://www.kilobiryani.co.uk/wp-content/uploads/2024/01/CHICKEN-LOLLIPOP-BIRYANI.jpg">
+                            <p><strong>Ingredients:</strong> Chicken Lollipop, Basmati Rice, Curd, Green Chilies, Spices, Mint</p>
+                            <p><strong>Process:</strong> Fry marinated lollipop pieces, prepare biryani rice with masala, and layer with chicken. Dum cook and serve spicy!</p>
+                        </div>
+                        
+                        <div class="recipe-card" data-name="Mutton Fry Piece Biryani" data-ingredients="mutton, basmati rice, ginger garlic paste, red chili powder, garam masala, mint, oil">
+                            <h2>Mutton Fry Piece Biryani</h2>
+                            <img class="item-img" src="https://i.ytimg.com/vi/VWraUmQL8Fw/maxresdefault.jpg">
+                            <p><strong>Ingredients:</strong> Mutton, Basmati Rice, Ginger Garlic Paste, Red Chili Powder, Garam Masala, Mint, Oil</p>
+                            <p><strong>Process:</strong> Pressure cook and fry mutton pieces. Cook rice separately. Layer and steam fry mutton with rice. Serve hot with raita.</p>
+                        </div>
+                        
+                        <div class="recipe-card" data-name="Mutton Dum Biryani" data-ingredients="mutton, curd, basmati rice, fried onions, saffron, mint, ghee">
+                            <h2>Mutton Dum Biryani</h2>
+                            <img class="item-img" src="https://vismaifood.com/storage/app/uploads/public/6cb/0df/a6f/thumb__700_0_0_0_auto.jpg">
+                            <p><strong>Ingredients:</strong> Mutton, Curd, Basmati Rice, Fried Onions, Saffron, Mint, Ghee</p>
+                            <p><strong>Process:</strong> Marinate mutton overnight. Layer with rice, fried onions, and saffron milk. Dum cook until mutton is tender and rice is aromatic.</p>
+                        </div>
+                        
+                        <div class="recipe-card" data-name="Prawn Fry Biryani" data-ingredients="prawns, rice, coconut milk, green masala, curry leaves, garam masala">
+                            <h2>Prawn Fry Biryani</h2>
+                            <img class="item-img" src="https://www.archanaskitchen.com/images/archanaskitchen/1-Author/Karthika_Gopalakrishnan/Prawns_Biryani.jpg">
+                            <p><strong>Ingredients:</strong> Prawns, Basmati Rice, Coconut Milk, Green Masala, Curry Leaves, Garam Masala</p>
+                            <p><strong>Process:</strong> Marinate and fry prawns. Cook rice with mild spices and coconut milk. Mix and steam with fried prawns on top. Serve coastal-style!</p>
+                        </div>
+                        
+                        <div class="recipe-card" data-name="Hyderabadi Chicken Dum Biryani" data-ingredients="chicken, basmati rice, curd, fried onions, mint, saffron, whole spices">
+                            <h2>Hyderabadi Chicken Dum Biryani</h2>
+                            <img class="item-img" src="https://theyummydelights.com/wp-content/uploads/2018/06/hyderabadi-chicken-dum-biryani.jpg">
+                            <p><strong>Ingredients:</strong> Chicken, Basmati Rice, Curd, Fried Onions, Mint, Saffron, Whole Spices</p>
+                            <p><strong>Process:</strong> Marinate chicken in curd and spices. Layer with half-cooked rice, mint, and fried onions. Dum cook until flavors infuse deeply.</p>
+                        </div>
+
+                        <div class="recipe-card" data-name="Egg Masala Biryani" data-ingredients="boiled eggs, basmati rice, onion-tomato masala, green chilies, spices">
+                            <h2>Egg Masala Biryani</h2>
+                            <img class="item-img" src="https://i.pinimg.com/originals/50/c8/00/50c80007223d76b9b9b107cfc437c001.jpg">
+                            <p><strong>Ingredients:</strong> Boiled Eggs, Basmati Rice, Onion-Tomato Masala, Green Chilies, Spices</p>
+                            <p><strong>Process:</strong> Fry boiled eggs in masala. Cook rice and layer with spicy egg gravy. Dum cook and garnish with coriander leaves.</p>
+                        </div>
+                        
+                        <div class="recipe-card" data-name="Mixed Fry Piece Biryani" data-ingredients="fried chicken, mutton, prawns, basmati rice, spices, curd, fried onions">
+                            <h2>Mixed Fry Piece Biryani</h2>
+                            <img class="item-img" src="https://3.bp.blogspot.com/-3jjrQ9CM2TM/UtYkAuv7nVI/AAAAAAAAGyI/g_FyrEVkb98/s1600/IMG_9989.JPG">
+                            <p><strong>Ingredients:</strong> Fried Chicken, Mutton, Prawns, Basmati Rice, Spices, Curd, Fried Onions</p>
+                            <p><strong>Process:</strong> Fry all meats separately with spices. Layer with rice, fried onions, and masala. Dum cook until fully blended. A royal biryani feast!</p>
+                        </div>                   
+                </div>
+                </div>       
+            </div>
+
+        <div >
+        <h1 class="haveasipheading">Have a sip & chill 🍸🥂🍹</h1>
+
+        <div><h class="subheading"> Mocktails</h>
+        <div class="mocktail-section">
+        <div class="recipe-card" data-name="Virgin Mojito" data-ingredients="mint leaves, lime, sugar, soda, ice">
+            <h2>Virgin Mojito</h2>
+            <img class="item-img" src="https://www.pastrywishes.com/wp-content/uploads/2022/06/virgin-mojito-with-sprite-square.jpg">
+            <p><strong>Ingredients:</strong> Mint Leaves, Lime, Sugar, Soda, Ice</p>
+            <p><strong>Process:</strong> Muddle mint leaves and lime, add sugar and soda, mix well, serve with ice.</p>
+        </div>
+        
+        <div class="recipe-card" data-name="Blue Lagoon" data-ingredients="blue curacao syrup, lemonade, soda, ice">
+            <h2>Blue Lagoon</h2>
+            <img class="item-img" src="https://www.cupofzest.com/wp-content/uploads/2022/03/Blue-Lagoon-Mocktail-Thumbnail-2-Web.jpg.jpg">
+            <p><strong>Ingredients:</strong> Blue Curacao Syrup, Lemonade, Soda, Ice</p>
+            <p><strong>Process:</strong> Mix blue curacao syrup with lemonade, top with soda, serve chilled.</p>
+        </div>
+        
+        <div class="recipe-card" data-name="Strawberry Cooler" data-ingredients="strawberries, lemon juice, soda, sugar, ice">
+            <h2>Strawberry Cooler</h2>
+            <img class="item-img" src="https://mocktail.net/wp-content/uploads/2021/09/Virgin-Strawberry-Daiquiri_Mocktail_ig.jpg">
+            <p><strong>Ingredients:</strong> Strawberries, Lemon Juice, Soda, Sugar, Ice</p>
+            <p><strong>Process:</strong> Blend strawberries with sugar and lemon juice, add soda, serve with ice.</p>
+        </div>
+        
+        <div class="recipe-card" data-name="Pineapple Punch" data-ingredients="pineapple juice, lemon juice, ginger ale, ice">
+            <h2>Pineapple Punch</h2>
+            <img class="item-img" src="https://www.beyondthebayoublog.com/wp-content/uploads/2024/04/Pineapple-Mocktail-Recipe-Sunshine-Splash.png">
+            <p><strong>Ingredients:</strong> Pineapple Juice, Lemon Juice, Ginger Ale, Ice</p>
+            <p><strong>Process:</strong> Mix pineapple juice with lemon juice, add ginger ale, serve chilled.</p>
+        </div>
+        
+        <div class="recipe-card" data-name="Watermelon Mint Cooler" data-ingredients="watermelon, mint, lime, soda, ice">
+            <h2>Watermelon Mint Cooler</h2>
+            <img class="item-img" src="https://dailydishrecipes.com/wp-content/uploads/2016/03/Watermelon-Lime-Wine-Cooler-FEATURED.jpg">
+            <p><strong>Ingredients:</strong> Watermelon, Mint, Lime, Soda, Ice</p>
+            <p><strong>Process:</strong> Blend watermelon, strain, add mint and lime juice, top with soda, serve chilled.</p>
+        </div>
+        
+        <div class="recipe-card" data-name="Blue Curacao Mocktail" data-ingredients="blue curacao syrup, lemonade, soda, lemon slices, ice">
+            <h2>Blue Curacao Mocktail</h2>
+            <img class="item-img" src="https://cdnimg.webstaurantstore.com/images/products/xxl/576542/2129248.jpg">
+    
+            <p><strong>Ingredients:</strong> Blue Curacao Syrup, Lemonade, Soda, Lemon Slices, Ice</p>
+            <p><strong>Process:</strong> Mix blue curacao syrup with lemonade, top with soda, garnish with lemon slices, serve chilled with ice.</p>
+        </div>
+        
+        <div class="recipe-card" data-name="Mint Mocktail" data-ingredients="fresh mint leaves, lemon juice, soda, sugar syrup, ice">
+            <h2>Mint Mocktail</h2>
+            <img class="item-img" src="https://heybairtender.s3.amazonaws.com/recipes/green-apple-mint-mocktail.png">
+            <p><strong>Ingredients:</strong> Fresh Mint Leaves, Lemon Juice, Soda, Sugar Syrup, Ice</p>
+            <p><strong>Process:</strong> Muddle mint leaves with sugar syrup and lemon juice. Fill glass with ice, top with soda, and stir well. Garnish with mint sprig and enjoy chilled!</p>
+        </div>      
+       
+    </div>
+    </div>
+    
+    <div>
+        <h class="subheading"> Milkshakes/ thickshakes</h>
+        <div class="mocktail-section">
+        
+        <div class="recipe-card" data-name="Chocolate Milkshake" data-ingredients="milk, cocoa powder, sugar, chocolate syrup, ice cream">
+            <h2>Chocolate Milkshake</h2>
+            <img class="item-img" src="https://static.toiimg.com/photo/84170265.cms">
+            <p><strong>Ingredients:</strong> Milk, Cocoa Powder, Sugar, Chocolate Syrup, Ice Cream</p>
+            <p><strong>Process:</strong> Blend all ingredients until smooth, serve chilled with whipped cream and chocolate syrup.</p>
+        </div>
+        
+        <div class="recipe-card" data-name="Vanilla Milkshake" data-ingredients="milk, vanilla extract, sugar, vanilla ice cream">
+            <h2>Vanilla Milkshake</h2>
+            <img class="item-img" src="https://www.mystart.com/blog/wp-content/uploads/OGL_Milkshake_5bf42d43550bdfdb1ccdf72e.jpeg">
+            <p><strong>Ingredients:</strong> Milk, Vanilla Extract, Sugar, Vanilla Ice Cream</p>
+            <p><strong>Process:</strong> Blend all ingredients until smooth, serve chilled with whipped cream.</p>
+        </div>
+    
+        <div class="recipe-card" data-name="Mango Milkshake" data-ingredients="milk, mango, sugar, mango ice cream">
+            <h2>Mango Milkshake</h2>
+            <img class="item-img" src="https://www.cookwithkushi.com/wp-content/uploads/2021/04/IMG_3500_.jpg">
+            <p><strong>Ingredients:</strong> Milk, Mango, Sugar, Mango Ice Cream</p>
+            <p><strong>Process:</strong> Blend all ingredients until smooth, serve chilled with mango chunks.</p>
+        </div>
+        
+        <div class="recipe-card" data-name="Oreo Milkshake" data-ingredients="milk, Oreo cookies, sugar, vanilla ice cream, chocolate syrup">
+            <h2>Oreo Milkshake</h2>
+            <img class="item-img" src="https://myfamilypride.com/wp-content/uploads/2023/08/oreo-milkshake-recipe-1024x1024.jpg">
+            <p><strong>Ingredients:</strong> Milk, Oreo Cookies, Sugar, Vanilla Ice Cream, Chocolate Syrup</p>
+            <p><strong>Process:</strong> Blend all ingredients until thick and creamy, serve chilled with crushed Oreo topping.</p>
+        </div>
+        
+        <div class="recipe-card" data-name="Banana Milkshake" data-ingredients="milk, banana, honey, vanilla ice cream">
+            <h2>Banana Milkshake</h2>
+            <img class="item-img" src="https://observatorulnational.ro/wp-content/uploads/2018/02/Banana-milkshake-1.jpg">
+            <p><strong>Ingredients:</strong> Milk, Banana, Honey, Vanilla Ice Cream</p>
+            <p><strong>Process:</strong> Blend all ingredients until smooth, serve chilled with banana slices.</p>
+        </div>
+
+        <div class="recipe-card" data-name="Butterscotch Milkshake" data-ingredients="butterscotch syrup, milk, vanilla ice cream, ice cubes">
+            <h2>Butterscotch Milkshake </h2>
+            <img class="item-img" src="https://entirelyelizabeth.com/wp-content/uploads/2022/10/IMG_3638-769x1024.jpg">
+            <p><strong>Ingredients:</strong> Butterscotch Syrup, Milk, Vanilla Ice Cream, Ice Cubes</p>
+            <p><strong>Process:</strong> Blend butterscotch syrup, milk, and ice cream until creamy. Serve chilled with a drizzle of syrup on top.</p>
+        </div>
+        
+        <div class="recipe-card" data-name="Coffee Milkshake" data-ingredients="instant coffee, milk, vanilla ice cream, sugar, ice">
+            <h2>Coffee Milkshake </h2>
+            <img class="item-img" src="https://i.pinimg.com/originals/d5/af/c4/d5afc422239f2e4237635f1088eb8c49.jpg">
+            <p><strong>Ingredients:</strong> Instant Coffee, Milk, Vanilla Ice Cream, Sugar, Ice</p>
+            <p><strong>Process:</strong> Blend coffee powder with sugar, milk, ice cream, and ice. Pour into a glass and top with whipped cream or coffee dust.</p>
+        </div>
+        
+        <div class="recipe-card" data-name="Dry Fruit Milkshake" data-ingredients="mixed dry fruits, milk, sugar, cardamom, ice cream">
+            <h2>Dry Fruit Milkshake </h2>
+            <img class="item-img" src="https://www.awesomecuisine.com/wp-content/uploads/2016/06/dry-fruits-milkshake.jpg">
+            <p><strong>Ingredients:</strong> Mixed Dry Fruits (cashews, almonds, pistachios), Milk, Sugar, Cardamom, Ice Cream</p>
+            <p><strong>Process:</strong> Soak and blend dry fruits into a paste. Add milk, sugar, and ice cream. Blend again and serve chilled.</p>
+        </div>
+        
+        <div class="recipe-card" data-name="KitKat Milkshake" data-ingredients="kitkat bars, milk, chocolate ice cream, sugar, ice">
+            <h2>KitKat Milkshake </h2>
+            <img class="item-img" src="https://tvanamm.com/wp-content/uploads/2024/01/Kitkat-milkshake-1.jpg">
+            <p><strong>Ingredients:</strong> KitKat Bars, Milk, Chocolate Ice Cream, Sugar, Ice</p>
+            <p><strong>Process:</strong> Blend KitKat bars with milk, ice cream, and sugar until smooth. Garnish with KitKat chunks or drizzle chocolate syrup.</p>
+        </div>
+        
+        <div class="recipe-card" data-name="Nutella Milkshake" data-ingredients="nutella, milk, vanilla ice cream, chocolate syrup, ice">
+            <h2>Nutella Milkshake </h2>
+            <img class="item-img" src="https://www.oliviascuisine.com/wp-content/uploads/2014/08/banananutellamilkshake2.jpg">
+            <p><strong>Ingredients:</strong> Nutella, Milk, Vanilla Ice Cream, Chocolate Syrup, Ice</p>
+            <p><strong>Process:</strong> Blend Nutella with milk, ice cream, and ice. Pour into a glass and swirl chocolate syrup on top. Serve chilled.</p>
+        </div>
+        
+        <div class="recipe-card" data-name="Rose Milkshake" data-ingredients="rose syrup, milk, vanilla ice cream, sugar, ice">
+            <h2>Rose Milkshake </h2>
+            <img class="item-img" src="https://tamil.boldsky.com/img/2014/11/04-rose-milkshake.jpg">
+            <p><strong>Ingredients:</strong> Rose Syrup, Milk, Vanilla Ice Cream, Sugar, Ice</p>
+            <p><strong>Process:</strong> Blend rose syrup, milk, sugar, and ice cream until smooth. Serve chilled with rose petals or a scoop of ice cream.</p>
+        </div>
+        </div>
+    </div>
+
+        <div>
+            <h class="subheading"> Juices</h>
+            <div class="mocktail-section">
+            <div class="recipe-card" data-name="Watermelon Juice" data-ingredients="watermelon, lemon, mint">
+                <h2>Watermelon Juice</h2>
+                <img class="item-img" src="https://bellyfull.net/wp-content/uploads/2022/06/Watermelon-Juice-blog-4.jpg">
+                <p><strong>Ingredients:</strong> Watermelon, Lemon, Mint</p>
+                <p><strong>Process:</strong> Blend watermelon, add lemon juice, garnish with mint, serve chilled.</p>
+            </div>
+    
+            <div class="recipe-card" data-name="Muskmelon Juice" data-ingredients="muskmelon, sugar, water, ice cubes">
+                <h2>Muskmelon Juice</h2>
+                <img class="item-img" src="https://vaya.in/recipes/wp-content/uploads/2019/07/Muskmelon-Juice.jpg">
+                <p><strong>Ingredients:</strong> Muskmelon, Sugar, Water, Ice Cubes</p>
+                <p><strong>Process:</strong> Blend muskmelon with sugar and water, strain if needed, serve chilled with ice cubes.</p>
+            </div>
+            
+            <div class="recipe-card" data-name="Cashew Juice" data-ingredients="cashew fruit, sugar, water, lemon juice">
+                <h2>Cashew Juice</h2>
+                <img class="item-img" src="https://www.tipshealthline.com/wp-content/uploads/2018/01/benefits-of-cashew-juice.jpg">
+                <p><strong>Ingredients:</strong> Cashew Fruit, Sugar, Water, Lemon Juice</p>
+                <p><strong>Process:</strong> Blend cashew fruit with water, strain, add sugar and lemon juice, mix well, serve chilled.</p>
+            </div> 
+
+            <div class="recipe-card" data-name="Orange Juice" data-ingredients="fresh oranges, sugar, ice cubes, salt (optional)">
+                <h2>Orange Juice </h2>
+                <img class="item-img" src="https://www.alphafoodie.com/wp-content/uploads/2020/11/Orange-Juice-1-of-1.jpeg">
+                <p><strong>Ingredients:</strong> Fresh Oranges, Sugar, Ice Cubes, Salt (optional)</p>
+                <p><strong>Process:</strong> Squeeze fresh oranges or blend and strain. Add sugar and a pinch of salt if needed. Serve chilled with ice.</p>
+            </div>
+            
+            <div class="recipe-card" data-name="Mango Juice" data-ingredients="ripe mangoes, water, sugar, ice cubes">
+                <h2>Mango Juice </h2>
+                <img class="item-img" src="https://4.bp.blogspot.com/-n0dJdQ1Ty9E/TvJlnK9M_OI/AAAAAAAAAZA/rybCc1rjv0s/s1600/Mango+Juice_9152.JPG">
+                <p><strong>Ingredients:</strong> Ripe Mangoes, Water, Sugar, Ice Cubes</p>
+                <p><strong>Process:</strong> Blend peeled mango pieces with water and sugar. Strain if needed and serve chilled with ice.</p>
+            </div>
+            
+            <div class="recipe-card" data-name="Pineapple Juice" data-ingredients="pineapple chunks, water, sugar, ice cubes">
+                <h2>Pineapple Juice </h2>
+                <img class="item-img" src="https://img.freepik.com/premium-photo/pineapple-juice-with-straw-is-table-pineapple_741910-2012.jpg">
+                <p><strong>Ingredients:</strong> Pineapple Chunks, Water, Sugar, Ice Cubes</p>
+                <p><strong>Process:</strong> Blend pineapple with water and sugar. Strain and serve cold with ice cubes.</p>
+            </div>
+            
+            <div class="recipe-card" data-name="Grape Juice" data-ingredients="seedless grapes, sugar, water, lemon juice, ice">
+                <h2>Grape Juice </h2>
+                <img class="item-img" src="https://cdn.healthyrecipes101.com/wp-content/uploads/2020/10/Concord-Grape-Juice-Recipe-Healthykitchen101.jpg">
+                <p><strong>Ingredients:</strong> Seedless Grapes, Sugar, Water, Lemon Juice, Ice</p>
+                <p><strong>Process:</strong> Blend grapes with water and sugar. Strain, add a dash of lemon juice, and serve with ice.</p>
+            </div>
+            
+            <div class="recipe-card" data-name="Apple Juice" data-ingredients="apples, water, sugar or honey, lemon juice">
+                <h2>Apple Juice </h2>
+                <img class="item-img" src="https://images.onlymyhealth.com/imported/images/2022/November/19_Nov_2022/main-applejuicebenefits.jpg">
+                <p><strong>Ingredients:</strong> Apples, Water, Sugar or Honey, Lemon Juice</p>
+                <p><strong>Process:</strong> Blend chopped apples with water and lemon juice. Strain and sweeten if needed. Serve chilled.</p>
+            </div>
+            
+            <div class="recipe-card" data-name="Mosambi Juice" data-ingredients="sweet lime (mosambi), sugar, salt, ice">
+                <h2>Mosambi (Sweet Lime) Juice </h2>
+                <img class="item-img" src="https://www.healthshots.com/wp-content/uploads/2020/05/sweet-lime.jpg">
+                <p><strong>Ingredients:</strong> Sweet Lime (Mosambi), Sugar, Salt, Ice</p>
+                <p><strong>Process:</strong> Extract juice from mosambi. Add sugar and a pinch of salt. Stir well and serve chilled.</p>
+            </div>
+
+            <div class="recipe-card" data-name="Amla Juice" data-ingredients="amla (gooseberries), water, honey or sugar, ginger, black salt">
+                <h2>Amla (Indian Gooseberry) Juice</h2>
+                <img class="item-img" src="https://i0.wp.com/www.naturalfoodseries.com/wp-content/uploads/2019/05/indian-gooseberry-juice.jpeg?w=1000&ssl=1">
+                <p><strong>Ingredients:</strong> Amla (Gooseberries), Water, Honey or Sugar, Ginger, Black Salt</p>
+                <p><strong>Process:</strong> Boil or steam amlas, remove seeds, and blend with water, ginger, and honey. Add a pinch of black salt. Strain and serve chilled.</p>
+            </div>
+            
+            <div class="recipe-card" data-name="Guava Juice" data-ingredients="ripe guavas, water, sugar, lemon juice, ice">
+                <h2>Guava Juice</h2>
+                <img class="item-img" src="https://thatgirlcookshealthy.com/wp-content/uploads/2022/07/Guava-Juice-Recipe-image-1.png">
+                <p><strong>Ingredients:</strong> Ripe Guavas, Water, Sugar, Lemon Juice, Ice</p>
+                <p><strong>Process:</strong> Blend chopped guavas with water and sugar. Strain to remove seeds. Add lemon juice and serve chilled with ice cubes.</p>
+            </div>           
+            </div>      
+        </div>
+
+    <div>
+        <h1 class="haveasipheading"> Your dessert adventure begins here!🍧🍰 </h1>
+        <h class="subheading">Desserts</h>
+        <div class="mocktail-section">
+        <div class="recipe-card" data-name="Chocolate Cake" data-ingredients="chocolate, flour, eggs">
+            <h2>Chocolate Cake</h2>
+            <img class="item-img" src="https://bakingqueen74.co.uk/wp-content/uploads/2019/01/chocolate-birthday-cake.jpg">
+            <p><strong>Ingredients:</strong> Chocolate, Flour, Eggs</p>
+            <p><strong>Process:</strong> Mix ingredients, bake at 180°C for 30 mins.</p>
+        </div>
+
+        <div class="recipe-card" data-name="Vanilla Cupcakes" data-ingredients="Flour, Sugar, Eggs, Butter, Vanilla extract">
+            <h2>Vanilla Cupcakes</h2>
+            <img class="item-img" src="https://www.recipetineats.com/tachyon/2020/09/Vanilla-Cupcakes-on-stand.jpg?resize=80">
+            <p><strong>Ingredients:</strong> Flour, Sugar, Eggs, Butter, Vanilla extract</p>
+            <p><strong>Process:</strong> Mix ingredients, pour into cupcake molds, bake at 175°C for 20 mins.</p>
+        </div>
+        
+        <div class="recipe-card" data-name="Red Velvet Cake" data-ingredients="Flour, Cocoa powder, Buttermilk, Vinegar, Red food coloring">
+            <h2>Red Velvet Cake</h2>
+            <img class="item-img" src="https://glutenfreecuppatea.co.uk/wp-content/uploads/2019/11/gluten-free-red-velvet-cake-recipe-featured.jpg">
+            <p><strong>Ingredients:</strong> Flour, Cocoa powder, Buttermilk, Vinegar, Red food coloring</p>
+            <p><strong>Process:</strong> Mix ingredients, bake at 175°C for 30 mins, frost with cream cheese frosting.</p>
+        </div>
+        
+        <div class="recipe-card" data-name="Blueberry Muffins" data-ingredients="Flour, Sugar, Blueberries, Eggs, Baking powder">
+            <h2>Blueberry Muffins</h2>
+            <img class="item-img" src="https://omgchocolatedesserts.com/wp-content/uploads/2017/06/Lemon-Blueberry-Muffins-1.jpg">
+            <p><strong>Ingredients:</strong> Flour, Sugar, Blueberries, Eggs, Baking powder</p>
+            <p><strong>Process:</strong> Mix ingredients, fold in blueberries, bake at 180°C for 25 mins.</p>
+        </div>
+        
+        <div class="recipe-card" data-name="Brownies" data-ingredients="Chocolate, Butter, Sugar, Flour, Eggs">
+            <h2>Brownies</h2>
+            <img class="item-img" src="https://1.bp.blogspot.com/-0tus4l47i50/WW4LyPw99MI/AAAAAAAABC8/T9jZW8qxSpMZ4F4uQJNVxvI0D15qmi97QCLcBGAs/s1600/CCB3.jpg">
+            <p><strong>Ingredients:</strong> Chocolate, Butter, Sugar, Flour, Eggs</p>
+            <p><strong>Process:</strong> Melt chocolate & butter, mix with other ingredients, bake at 180°C for 25 mins.</p>
+        </div>
+        
+        <div class="recipe-card" data-name="Cheesecake" data-ingredients="Cream cheese, Sugar, Eggs, Graham crackers, Butter">
+            <h2>Cheesecake</h2>
+            <img class="item-img" src="https://cdn.diys.com/wp-content/uploads/2018/09/No-bake-caramel-Turtle-cheesecake.jpg">
+            <p><strong>Ingredients:</strong> Cream cheese, Sugar, Eggs, Graham crackers, Butter</p>
+            <p><strong>Process:</strong> Prepare crust, mix filling, bake at 160°C for 50 mins, chill before serving.</p>
+        </div>
+
+        <div class="recipe-card" data-name="Blueberry Pastry" data-ingredients="blueberry compote, sponge cake, whipped cream, sugar syrup">
+            <h2>Blueberry Pastry </h2>
+            <img class="item-img" src="https://buttermilkbysam.com/wp-content/uploads/2021/06/blueberry-cake-10.jpg">
+            <p><strong>Ingredients:</strong> Blueberry Compote, Sponge Cake, Whipped Cream, Sugar Syrup</p>
+            <p><strong>Process:</strong> Layer sponge cake with whipped cream and blueberry compote. Chill and garnish with fresh blueberries or glaze. Slice and serve.</p>
+        </div>
+        
+        <div class="recipe-card" data-name="Pineapple Pastry" data-ingredients="pineapple pieces, sponge cake, whipped cream, sugar syrup">
+            <h2>Pineapple Pastry </h2>
+            <img class="item-img" src="https://spicesnflavors.com/wp-content/uploads/2021/09/pineapple-cake-recipe-image.jpg">
+            <p><strong>Ingredients:</strong> Pineapple Pieces, Sponge Cake, Whipped Cream, Sugar Syrup</p>
+            <p><strong>Process:</strong> Soak sponge layers with sugar syrup. Add whipped cream and pineapple chunks between layers. Cover and decorate with cream and fruit. Chill before serving.</p>
+        </div>      
+    </div> 
+    </div>
+    
+    <div>     
+        <h class="subheading"> Ice Creams</h>
+        <div class="mocktail-section">
+        <div class="recipe-card" data-name="Vanilla Ice Cream" data-ingredients="milk, sugar, vanilla extract, cream">
+            <h2>Vanilla Ice Cream</h2>
+            <img class="item-img" src="https://www.theroastedroot.net/wp-content/uploads/2023/06/dairy-free-vanilla-ice-cream-8.jpg">
+            <p><strong>Ingredients:</strong> Milk, Sugar, Vanilla Extract, Cream</p>
+            <p><strong>Process:</strong> Mix ingredients, churn in an ice cream maker, freeze until set.</p>
+        </div>
+        
+        <div class="recipe-card" data-name="Chocolate Ice Cream" data-ingredients="milk, cocoa powder, sugar, cream">
+            <h2>Chocolate Ice Cream</h2>
+            <img class="item-img" src="https://www.browniebites.net/wp-content/uploads/2023/04/triple-chocolate-ice-cream-01-scaled.jpg">
+            <p><strong>Ingredients:</strong> Milk, Cocoa Powder, Sugar, Cream</p>
+            <p><strong>Process:</strong> Mix ingredients, heat slightly, cool, churn, and freeze until set.</p>
+        </div>
+        
+        <div class="recipe-card" data-name="Strawberry Ice Cream" data-ingredients="strawberries, milk, sugar, cream">
+            <h2>Strawberry Ice Cream</h2>
+            <img class="item-img" src="https://www.tasteofhome.com/wp-content/uploads/2018/03/exps8708_C2640C49B_RMS.jpg">
+            <p><strong>Ingredients:</strong> Strawberries, Milk, Sugar, Cream</p>
+            <p><strong>Process:</strong> Blend strawberries, mix with other ingredients, churn, and freeze until set.</p>
+        </div>
+        
+        <div class="recipe-card" data-name="Mango Ice Cream" data-ingredients="mango, condensed milk, cream, sugar">
+            <h2>Mango Ice Cream</h2>
+            <img class="item-img" src="https://i.pinimg.com/originals/34/00/af/3400af5cbd6f5ba9f500a6c0c9703ce4.jpg">
+            <p><strong>Ingredients:</strong> Mango, Condensed Milk, Cream, Sugar</p>
+            <p><strong>Process:</strong> Blend mangoes, mix with other ingredients, churn, and freeze until set.</p>
+        </div>
+        
+        <div class="recipe-card" data-name="Pista Ice Cream" data-ingredients="pistachios, milk, sugar, cream">
+            <h2>Pista Ice Cream</h2>
+            <img class="item-img" src="https://www.ruchiskitchen.com/wp-content/uploads/2015/07/pista_icecream_recipe_7.jpg">
+            <p><strong>Ingredients:</strong> Pistachios, Milk, Sugar, Cream</p>
+            <p><strong>Process:</strong> Blend pistachios, mix with milk and cream, churn, and freeze until set.</p>
+        </div>
+       
+        <div class="recipe-card" data-name="Oreo Ice Cream" data-ingredients="oreo biscuits, condensed milk, whipping cream, vanilla extract">
+            <h2>Oreo Ice Cream </h2>
+            <img class="item-img" src="https://n5d6q8j8.delivery.rocketcdn.me/wp-content/uploads/2023/05/oreo-ice-cream-scoops-spoon-glass-dish.jpg">
+            <p><strong>Ingredients:</strong> Oreo Biscuits, Condensed Milk, Whipping Cream, Vanilla Extract</p>
+            <p><strong>Process:</strong> Whip the cream until fluffy, fold in crushed Oreos and condensed milk. Freeze for 6 hours. Serve chilled with extra Oreo bits.</p>
+        </div>
+        
+        <div class="recipe-card" data-name="Butterscotch Ice Cream" data-ingredients="butterscotch essence, caramel bits, milk, cream, sugar">
+            <h2>Butterscotch Ice Cream </h2>
+            <img class="item-img" src="https://culinaryshades.com/wp-content/uploads/2023/03/butterscotch-ice-cream-main03-sqr.jpg">
+            <p><strong>Ingredients:</strong> Butterscotch Essence, Caramel Bits, Milk, Cream, Sugar</p>
+            <p><strong>Process:</strong> Prepare a creamy base with milk and sugar, add butterscotch essence and caramel bits. Freeze and enjoy the crunch!</p>
+        </div>
+        
+        <div class="recipe-card" data-name="Black Forest Dessert" data-ingredients="chocolate cake, whipped cream, cherries, chocolate shavings">
+            <h2>Black Forest Dessert </h2>
+            <img class="item-img" src="https://www.texanerin.com/content/uploads/2023/07/black-forest-ice-cream-1200-image.jpg">
+            <p><strong>Ingredients:</strong> Chocolate Cake, Whipped Cream, Cherries, Chocolate Shavings</p>
+            <p><strong>Process:</strong> Layer cake slices with whipped cream and cherries. Repeat layers, top with cream and chocolate. Chill before serving.</p>
+        </div>             
+        </div>  
+    </div>
+    </div>   
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
